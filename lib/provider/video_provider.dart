@@ -191,7 +191,7 @@ class VideoPlayerModel extends ChangeNotifier {
 
   void fordispose() {
     controller.removeListener(updateSeeker);
-    controller.initialize();
+    controller.dispose();
     position = const Duration();
     loading = false;
     isHourZero = false;

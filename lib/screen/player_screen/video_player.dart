@@ -24,7 +24,6 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
 
   @override
   void dispose() {
-    ref.read(videoPlayerProvider).fordispose();
     super.dispose();
   }
 

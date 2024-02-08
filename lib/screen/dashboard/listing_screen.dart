@@ -33,7 +33,9 @@ class _ListScreenState extends State<ListScreen> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => VideoPlayerScreen(data: data),
-                    ));
+                    )).then((value) {
+                  ref.read(videoPlayerProvider).fordispose();
+                });
               },
               // leading: Image.network(
               //    data['']),
