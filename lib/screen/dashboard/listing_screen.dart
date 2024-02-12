@@ -14,8 +14,11 @@ class _ListScreenState extends State<ListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Video Player Example"),
+        title: const Text("Video List", style: TextStyle(color: Colors.black)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
       body: Consumer(builder: (context, ref, child) {
         var videoList = ref.watch(videoListProvider).data;

@@ -22,7 +22,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ProviderScope(
-      child: const MaterialApp(
+      child: MaterialApp(
+        theme: ThemeData(useMaterial3: false),
         home: ListScreen(),
         debugShowCheckedModeBanner: false,
       ),

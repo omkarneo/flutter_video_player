@@ -11,6 +11,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       ],
       "subtitle": "By Blender Foundation",
+      "channel": "Omkar Parekh",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
       "title": "Big Buck Bunny"
@@ -21,6 +22,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
       ],
       "subtitle": "By Blender Foundation",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
       "title": "Elephant Dream"
@@ -32,6 +34,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
       ],
       "subtitle": "By Google",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
       "title": "For Bigger Blazes"
@@ -43,6 +46,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
       ],
       "subtitle": "By Google",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg",
       "title": "For Bigger Escape"
@@ -54,6 +58,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
       ],
       "subtitle": "By Google",
+      "channel": "Omkar Parekh",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
       "title": "For Bigger Fun"
@@ -65,6 +70,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
       ],
       "subtitle": "By Google",
+      "channel": "Omkar Parekh",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
       "title": "For Bigger Joyrides"
@@ -76,6 +82,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
       ],
       "subtitle": "By Google",
+      "channel": "Omkar Parekh",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
       "title": "For Bigger Meltdowns"
@@ -87,6 +94,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
       ],
       "subtitle": "By Blender Foundation",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
       "title": "Sintel"
@@ -98,6 +106,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
       ],
       "subtitle": "By Garage419",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
       "title": "Subaru Outback On Street And Dirt"
@@ -109,6 +118,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
       ],
       "subtitle": "By Blender Foundation",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
       "title": "Tears of Steel"
@@ -120,6 +130,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
       ],
       "subtitle": "By Garage419",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
       "title": "Volkswagen GTI Review"
@@ -131,6 +142,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
       ],
       "subtitle": "By Garage419",
+      "channel": "Akash Kharmale",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
       "title": "We Are Going On Bullrun"
@@ -142,6 +154,7 @@ class VideoListDataModel extends ChangeNotifier {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
       ],
       "subtitle": "By Garage419",
+      "channel": "Omkar Parekh",
       "thumb":
           "https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
       "title": "What care can you get for a grand?"
@@ -192,7 +205,7 @@ class VideoPlayerModel extends ChangeNotifier {
   void fordispose() {
     controller.removeListener(updateSeeker);
     controller.dispose();
-    position = const Duration();
+    position = const Duration(seconds: 0);
     loading = false;
     isHourZero = false;
     isMinutesZero = false;
